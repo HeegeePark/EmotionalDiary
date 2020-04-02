@@ -5,9 +5,7 @@ import android.os.Parcelable;
 import com.example.sohyeon.emotionaldiary.biosignal.Signal;
 
 
-/**
- * Created by lhw48 on 2016-06-22.
- */
+
 public class SignalData extends Signal implements Parcelable {
 
     public SignalData(Signal signal) {

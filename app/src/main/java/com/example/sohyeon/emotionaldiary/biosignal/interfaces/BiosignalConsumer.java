@@ -1,12 +1,10 @@
-package com.example.sohyeon.emotionaldiary.biosignal;
+package com.example.sohyeon.emotionaldiary.biosignal.interfaces;
 
 import android.content.Context;
 import android.content.Intent;
 import android.content.ServiceConnection;
 
-/**
- * Created by lhw48 on 2016-06-22.
- */
+
 public interface BiosignalConsumer {
     /**
      * Called when the esrcBracelet service is running and ready to accept your commands through the SociaLBandManager

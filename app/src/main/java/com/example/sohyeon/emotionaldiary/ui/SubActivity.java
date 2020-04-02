@@ -1,6 +1,8 @@
-package com.example.sohyeon.emotionaldiary;
+package com.example.sohyeon.emotionaldiary.ui;
 
 import android.app.Activity;
+import android.content.Intent;
+import android.media.Image;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -8,42 +10,43 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
-import android.widget.TextView;
 
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.List;
+import java.util.ArrayList;
+import java.util.Set;
+import android.widget.Toast;
 
-public class Emotion_Mad extends AppCompatActivity{
+import com.example.sohyeon.emotionaldiary.R;
+
+public class SubActivity extends AppCompatActivity {
     Activity act = this;
+    Button b9, bPrev, bNext;
+    ImageView imageView;
     String[] filenames;
     int fileindex = 0;
-    ImageView imageView;
-    Button bPrev, bNext,back;
-    TextView countimage3;
-
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.ver_emotion_mad);
-        countimage3 = (TextView) findViewById(R.id.countimage3);
-        imageView = (ImageView) findViewById(R.id.image_view);
-        back = (Button) findViewById(R.id.button90);
-        back.setOnClickListener(new View.OnClickListener() {
+        setContentView(R.layout.activity_sub);
+
+        b9 = (Button) findViewById(R.id.button9);
+        b9.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 act.finish();
-                //imageView = (ImageView) findViewById(R.id.image_view);
             }
-        });
+        });//뒤로가기 버튼 클릭하면 activity_main으로 이동
+
+
         bPrev = (Button) findViewById(R.id.button_prev);
         bPrev.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                if (fileindex > 0) {
+                if(fileindex > 0) {
                     fileindex -= 1;
                     DisplayImage(filenames[fileindex]);
-                    countimage3.setText((fileindex + 1) + "/" + filenames.length);
                 } else {
                     // Toast
                 }
@@ -53,17 +56,18 @@ public class Emotion_Mad extends AppCompatActivity{
         bNext = (Button) findViewById(R.id.button_next);
         bNext.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                if (fileindex < filenames.length - 1) {
+                if(fileindex < filenames.length - 1) {
                     fileindex += 1;
                     DisplayImage(filenames[fileindex]);
-                    countimage3.setText((fileindex + 1) + "/" + filenames.length);
                 } else {
                     // Toast
                 }
             }
         });//다음 사진 보여주기
 
-        String filename = "Angry.txt";
+        imageView = (ImageView) findViewById(R.id.image_view);
+
+        String filename = "20180830.txt";
 
         String ret = "";
 
@@ -86,22 +90,14 @@ public class Emotion_Mad extends AppCompatActivity{
         } catch (Exception e) {
             e.printStackTrace();
         }
-        if (!ret.equals("")) {
-            filenames = ret.split("\n");
-            List<String> Listfilenames = Arrays.asList(filenames);
-            Collections.reverse(Listfilenames);
 
-            countimage3.setText((fileindex + 1) + "/" + filenames.length);
-
+        filenames = ret.split("\n");
+        if(filenames.length > 0) {
             DisplayImage(filenames[0]);
         }
     }
 
     private void DisplayImage(String filename) {
         imageView.setImageURI(Uri.parse(filename));
-    }
-    protected  void onDestroy() {
-        super.onDestroy();
-        //Toast.makeText(this, "종료!", Toast.LENGTH_LONG).show();
     }
 }

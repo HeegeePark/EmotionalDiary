@@ -1,4 +1,4 @@
-package com.example.sohyeon.emotionaldiary;
+package com.example.sohyeon.emotionaldiary.ui;
 
 
 import android.app.Activity;
@@ -20,22 +20,21 @@ import android.util.Log;
 import android.view.View;
 import android.view.WindowManager;
 import android.widget.Button;
-import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.example.sohyeon.emotionaldiary.biosignal.BiosignalConsumer;
+import com.example.sohyeon.emotionaldiary.biosignal.PeakDetector;
+import com.example.sohyeon.emotionaldiary.R;
+import com.example.sohyeon.emotionaldiary.biosignal.interfaces.BiosignalConsumer;
 import com.example.sohyeon.emotionaldiary.biosignal.BiosignalManager;
 import com.example.sohyeon.emotionaldiary.biosignal.PeakAnalysizer;
-import com.example.sohyeon.emotionaldiary.biosignal.SignalNotifier;
-import com.example.sohyeon.emotionaldiary.biosignal.StateNotifier;
+import com.example.sohyeon.emotionaldiary.biosignal.interfaces.SignalNotifier;
+import com.example.sohyeon.emotionaldiary.biosignal.interfaces.StateNotifier;
 
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
-import java.util.Timer;
-import java.util.TimerTask;
 
 
 public class HomeActivity extends AppCompatActivity implements BiosignalConsumer {

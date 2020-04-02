@@ -19,7 +19,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".RealMainActivity">
+        <activity android:name=".ui.RealMainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -27,32 +27,32 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".SubActivity">
+        <activity android:name=".ui.SubActivity">
 
         </activity>
 
 
-        <activity android:name=".NewSubActivity">
+        <activity android:name=".ui.NewSubActivity">
 
         </activity>
 
 
-        <activity android:name=".EmotionActivity">
+        <activity android:name=".ui.EmotionActivity">
 
         </activity>
 
 
-        <activity android:name=".Emotion_Happy">
+        <activity android:name=".ui.Emotion_Happy">
 
         </activity>
 
 
-        <activity android:name=".Emotion_Mad">
+        <activity android:name=".ui.Emotion_Mad">
 
         </activity>
 
 
-        <activity android:name=".Emotion_Sadness">
+        <activity android:name=".ui.Emotion_Sadness">
 
         </activity>
 
@@ -61,15 +61,15 @@
 
         </activity>
 
-        <activity android:name=".CalenderActivity">
+        <activity android:name=".ui.CalenderActivity">
 
         </activity>
 
-        <activity android:name=".HomeActivity">
+        <activity android:name=".ui.HomeActivity">
 
         </activity>
 
-        <activity android:name=".ShowCalenderActivity">
+        <activity android:name=".ui.ShowCalenderActivity">
 
         </activity>
 
@@ -80,7 +80,7 @@
             android:theme="@android:style/Theme.Dialog" >
         </activity>
 
-        <activity android:name=".MainActivity">
+        <activity android:name=".ui.MainActivity">
 
         </activity>
 

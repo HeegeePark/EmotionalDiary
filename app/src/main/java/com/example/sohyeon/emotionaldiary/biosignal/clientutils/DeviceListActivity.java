@@ -35,9 +35,6 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-/**
- * Created by lhw48 on 2016-06-22.
- */
 public class DeviceListActivity extends Activity {
     private BluetoothAdapter mBluetoothAdapter;
 

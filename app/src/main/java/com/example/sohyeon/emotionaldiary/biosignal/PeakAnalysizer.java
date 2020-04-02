@@ -2,11 +2,8 @@ package com.example.sohyeon.emotionaldiary.biosignal;
 
 
 import android.util.Log;
-import android.widget.Switch;
 
-import com.example.sohyeon.emotionaldiary.HomeActivity;
-
-import java.util.ArrayList;
+import com.example.sohyeon.emotionaldiary.ui.HomeActivity;
 
 public class PeakAnalysizer {
 

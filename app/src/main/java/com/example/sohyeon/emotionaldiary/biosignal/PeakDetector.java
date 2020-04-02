@@ -1,4 +1,4 @@
-package com.example.sohyeon.emotionaldiary;
+package com.example.sohyeon.emotionaldiary.biosignal;
 
 import java.io.BufferedWriter;
 import java.io.FileWriter;

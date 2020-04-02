@@ -1,4 +1,4 @@
-package com.example.sohyeon.emotionaldiary;
+package com.example.sohyeon.emotionaldiary.ui;
 
 
 import android.app.Activity;
@@ -10,7 +10,9 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.CalendarView;
-import android.widget.Toast;
+
+import com.example.sohyeon.emotionaldiary.R;
+import com.example.sohyeon.emotionaldiary.ui.CalenderActivity;
 
 @RequiresApi(api = Build.VERSION_CODES.ECLAIR & Build.VERSION_CODES.JELLY_BEAN_MR2)
 

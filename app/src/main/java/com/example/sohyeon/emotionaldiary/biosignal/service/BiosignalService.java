@@ -32,9 +32,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.UUID;
 
-/**
- * Created by lhw48 on 2016-06-22.
- */
+
 public class BiosignalService extends Service {
     private final static String TAG = "BiosignalService";
 

@@ -6,9 +6,7 @@ import android.os.Parcelable;
 import com.example.sohyeon.emotionaldiary.biosignal.State;
 
 
-/**
- * Created by lhw48 on 2016-06-22.
- */
+
 public class StateData extends State implements Parcelable {
 
     public StateData(State state) {

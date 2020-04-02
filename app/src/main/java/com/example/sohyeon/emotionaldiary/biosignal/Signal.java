@@ -6,9 +6,7 @@ import android.support.annotation.RequiresApi;
 
 @RequiresApi(api = Build.VERSION_CODES.ECLAIR & Build.VERSION_CODES.JELLY_BEAN_MR2)
 
-/**
- * Created by lhw48 on 2016-06-22.
- */
+
 public class Signal {
     protected double value;
 

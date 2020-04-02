@@ -16,6 +16,9 @@ import android.os.Messenger;
 import android.os.RemoteException;
 import android.util.Log;
 
+import com.example.sohyeon.emotionaldiary.biosignal.interfaces.BiosignalConsumer;
+import com.example.sohyeon.emotionaldiary.biosignal.interfaces.SignalNotifier;
+import com.example.sohyeon.emotionaldiary.biosignal.interfaces.StateNotifier;
 import com.example.sohyeon.emotionaldiary.biosignal.service.BiosignalService;
 import com.example.sohyeon.emotionaldiary.biosignal.service.SignalData;
 import com.example.sohyeon.emotionaldiary.biosignal.service.StartRMData;
@@ -28,9 +31,7 @@ import java.util.Map;
 
 import static android.content.Context.MODE_PRIVATE;
 
-/**
- * Created by lhw48 on 2016-06-22.
- */
+
 public class BiosignalManager {
     private static final String TAG = "BiosignalManager";
 

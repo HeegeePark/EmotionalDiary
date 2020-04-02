@@ -1,21 +1,19 @@
-package com.example.sohyeon.emotionaldiary;
+package com.example.sohyeon.emotionaldiary.ui;
 
 import android.app.Activity;
 import android.content.Intent;
-import android.media.Image;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
-import android.provider.MediaStore;
 import android.widget.ImageView;
 import android.widget.TextView;
-import java.text.SimpleDateFormat;
-import java.util.Date;
-import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
+
+import com.example.sohyeon.emotionaldiary.R;
+import com.example.sohyeon.emotionaldiary.ui.Emotion_Happy;
+import com.example.sohyeon.emotionaldiary.ui.Emotion_Mad;
+import com.example.sohyeon.emotionaldiary.ui.Emotion_Sadness;
 
 public class EmotionActivity extends AppCompatActivity {
     ImageView imageView;

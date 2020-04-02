@@ -1,4 +1,4 @@
-package com.example.sohyeon.emotionaldiary;
+package com.example.sohyeon.emotionaldiary.ui;
 
 import android.app.Activity;
 import android.net.Uri;
@@ -9,6 +9,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
+
+import com.example.sohyeon.emotionaldiary.R;
 
 import java.io.InputStream;
 import java.io.InputStreamReader;

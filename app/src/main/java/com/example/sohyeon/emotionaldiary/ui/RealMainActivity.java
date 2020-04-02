@@ -1,4 +1,4 @@
-package com.example.sohyeon.emotionaldiary;
+package com.example.sohyeon.emotionaldiary.ui;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -6,7 +6,8 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.widget.ImageView;
-import android.widget.TextView;
+
+import com.example.sohyeon.emotionaldiary.R;
 
 public class RealMainActivity extends AppCompatActivity {
     ImageView imageView1;
