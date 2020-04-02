@@ -1,8 +1,6 @@
 package com.example.sohyeon.emotionaldiary.biosignal;
 
-/**
- * Created by lhw48 on 2016-06-22.
- */
+
 public class State {
     protected int state;
 
